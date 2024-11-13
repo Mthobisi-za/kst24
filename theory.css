@@ -1,0 +1,114 @@
+.theory {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+}
+
+.theory .header {
+    background-image: url('./assets/theory.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--black);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.theory .header h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.theory .header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.theory .content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.theory .content h2 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.theory .content p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.theory .strategies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.theory .strategy {
+    width: 200px;
+    text-align: center;
+}
+
+.theory .strategy i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.theory .strategy h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.theory .strategy p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.theory .strategy-1 i {
+    color: #27ae60;
+}
+
+.theory .strategy-2 i {
+    color: #f39c12;
+}
+
+.theory .strategy-3 i {
+    color: #e74c3c;
+}
+
+.theory .strategy-4 i {
+    color: #2ecc71;
+}
+
+.theory .strategy-5 i {
+    color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .theory .header {
+        padding: 60px 20px;
+    }
+    .theory .header h1 {
+        font-size: 28px;
+    }
+    .theory .header p {
+        font-size: 16px;
+    }
+    .theory .content h2 {
+        font-size: 20px;
+    }
+    .theory .content p {
+        font-size: 14px;
+    }
+    .theory .strategy {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,99 @@
+.years {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.years .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.box {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box h2 {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.box p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 20px 0 0 0;
+}
+
+.objectives-text {
+    color: #948C8C;
+}
+
+.impact-section {
+    background-image: url('./assets/10\ years\ bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.impact-section h2 {
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+.impact-section p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 auto 30px auto;
+    width: 60%;
+}
+
+.read-more {
+    background-color: #28a745;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+    .impact-section {
+        padding: 40px 10px;
+    }
+    .impact-section h2 {
+        font-size: 1.5em;
+    }
+    .impact-section p {
+        font-size: 0.9em;
+    }
+    .read-more {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+.map {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.map img {
+    max-width: 95%;
+}

@@ -1,0 +1,144 @@
+.forewords {}
+
+.forewords .header {
+    margin-top: 50px;
+}
+
+.forewords .header h1 {
+    font-size: 48px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forewords .header p {
+    font-size: 16px;
+    color: #4A4A4A;
+    margin: 10px auto 50px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.forewords .cards {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-template-columns: 20% 20%;
+    column-gap: 40px;
+}
+
+.forewords .card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s;
+    box-shadow: 2px 6px 5px 0px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 2px 6px 5px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.38);
+}
+
+.forewords .card:hover {
+    transform: translateY(-10px);
+}
+
+.forewords .card img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 5px auto 5px auto;
+    max-width: 90%;
+}
+
+.forewords .card p {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.forewords .card h2 {
+    margin: 0px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.forewords .card .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.forewords .card .read-more i {
+    margin-left: 10px;
+}
+
+.forewords .card.green {
+    background-color: #00A651;
+}
+
+.forewords .card.yellow {
+    background-color: #E94B35;
+    position: relative;
+    /* top: -50px; */
+}
+
+.forewords .card.red {
+    background-color: #E94B35;
+}
+
+.forewords .card.green .read-more {
+    color: #00A651;
+}
+
+.forewords .card.yellow .read-more {
+    color: #E94B35;
+}
+
+.forewords .card.red .read-more {
+    color: #E94B35;
+}
+
+@media (max-width:1379px) {
+    .forewords .cards {
+        grid-template-columns: 40% 40%;
+    }
+}
+
+@media (max-width:667px) {
+    .forewords .cards {
+        grid-template-columns: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .forewords .header h1 {
+        font-size: 36px;
+    }
+    .forewords .header p {
+        width: 80%;
+        font-size: 14px;
+    }
+    .forewords .card {
+        /* width: 200px; */
+        padding: 15px;
+    }
+    .forewords .card img {
+        width: 80px;
+        height: 80px;
+    }
+    .forewords .card h2 {
+        font-size: 16px;
+    }
+    .forewords .card .read-more {
+        font-size: 14px;
+    }
+}
