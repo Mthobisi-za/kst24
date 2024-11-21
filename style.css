@@ -47,6 +47,18 @@ a {
     text-decoration: none;
 }
 
+.jt {
+    font-size: 48px!important;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--tertiary-color)!important;
+}
+
+.js {
+    font-size: 30px!important;
+    color: var(--primary-color)!important;
+}
+
 .menu {
     background-color: #fff;
     width: 100%;

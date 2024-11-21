@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    /* margin-top: 70px; */
 }
 
 .our_values h1 {
     color: #f44336;
     font-size: 48px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
