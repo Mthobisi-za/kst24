@@ -1,0 +1,138 @@
+.infrastructure .container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.infrastructure h1 {
+    color: #e74c3c;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.infrastructure .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.infrastructure .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.infrastructure .images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.infrastructure .text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 600px;
+    margin: 0 auto;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.infrastructure .text p {
+    margin-bottom: 20px;
+}
+
+.infrastructure .top-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.infrastructure .top-images img {
+    width: 48%;
+    height: auto;
+}
+
+.infrastructure .bottom-image {
+    display: none;
+}
+
+.infrastructure .desktop-only {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .infrastructure .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infrastructure .images {
+        margin-right: 0;
+    }
+    .infrastructure .bottom-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .infrastructure .desktop-only {
+        display: none;
+    }
+}
+
+.infrastructure_numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 20px;
+}
+
+.infrastructure_numbers .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.infrastructure_numbers .item {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.infrastructure_numbers .icon {
+    font-size: 64px;
+    color: #EE4326;
+}
+
+.infrastructure_numbers .number {
+    font-size: 24px;
+    color: #4caf50;
+    margin: 10px 0;
+}
+
+.infrastructure_numbers .text {
+    font-size: 16px;
+    color: #4caf50;
+}
+
+@media (max-width: 768px) {
+    .infrastructure_numbers .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infrastructure_numbers .item {
+        margin: 20px 0;
+    }
+}

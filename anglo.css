@@ -1,0 +1,58 @@
+.anglo {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.anglo h1 {
+    color: #ff4500;
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.anglo .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.anglo .item {
+    width: 200px;
+    margin: 20px;
+}
+
+.anglo .item i {
+    font-size: 50px;
+    color: #f4c542;
+}
+
+.anglo .item .number_two {
+    color: #00a651;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.anglo .item .description {
+    color: #00a651;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .anglo .item {
+        width: 150px;
+        margin: 10px;
+    }
+    .anglo .item i {
+        font-size: 40px;
+    }
+    .anglo .item .number_two {
+        font-size: 20px;
+    }
+    .anglo .item .description {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,62 @@
+.strength {
+    text-align: center;
+}
+
+.strength .header {
+    color: #FF4500;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    /* Added to make the text bold */
+}
+
+.strength .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.strength .logos img {
+    width: 200px;
+    /* height: 200px; */
+    margin: 10px;
+}
+
+.strength .content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .strength .header {
+        font-size: 20px;
+    }
+    .strength .logos img {
+        width: 120px;
+        height: 160px;
+        margin: 5px;
+    }
+    .strength .content {
+        width: 90%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .strength .header {
+        font-size: 18px;
+    }
+    .strength .logos img {
+        width: 100px;
+        height: 130px;
+        margin: 5px;
+    }
+    .strength .content {
+        width: 95%;
+        font-size: 10px;
+    }
+}
