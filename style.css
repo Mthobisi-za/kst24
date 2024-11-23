@@ -59,6 +59,12 @@ a {
     color: var(--primary-color)!important;
 }
 
+@media (max-width:500px) {
+    .jt {
+        line-height: 1!important;
+    }
+}
+
 .menu {
     background-color: #fff;
     width: 100%;
@@ -342,5 +348,11 @@ a {
 @media (max-width:650px) {
     .right-menu a {
         display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .card-section {
+        width: 90%;
     }
 }

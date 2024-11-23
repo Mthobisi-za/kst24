@@ -1,0 +1,120 @@
+.news {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.news .title {
+    color: #ff4500;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.news .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.news .arrow {
+    font-size: 36px;
+    color: #ffcc00;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.news .carousel .arrow.left {
+    left: 0;
+}
+
+.news .carousel .arrow.right {
+    right: 0;
+}
+
+.news .carousel .cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.news .card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+    /* width: 300px; */
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    text-align: center;
+    display: flex!important;
+    align-items: center;
+    width: 100%;
+    border: none;
+    height: inherit;
+}
+
+.news .card img {
+    width: 60%;
+    border-radius: 30px;
+    padding: 20px 0px;
+}
+
+.news .card h3 {
+    color: #ff4500;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.news .card p {
+    color: #008000;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.news .carousel .card .read-more {
+    background-color: #008000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* display: inline-block; */
+    margin-top: 10px;
+    width: 80%;
+}
+
+.news .carousel .card .read-more:hover {
+    background-color: #006400;
+}
+
+.news li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide__arrow svg {
+    fill: #006400!important;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.splide__arrow {
+    background-color: var(--secondary-color)!important;
+}
+
+@media (max-width: 768px) {
+    .news .carousel .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news .carousel .card {
+        margin: 10px 0;
+    }
+}
