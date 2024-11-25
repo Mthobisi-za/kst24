@@ -320,13 +320,15 @@ a {
 
 @media (max-width:1168px) {
     .card-section {
-        width: 80%;
+        width: 90%;
     }
 }
 
 @media (max-width:972px) {
     .card-section {
-        margin-top: -20vh;
+        margin-top: -40vh;
+        z-index: 5;
+        position: relative;
     }
     .bigtitle {
         font-size: 80px;
@@ -354,5 +356,11 @@ a {
 @media (max-width:450px) {
     .card-section {
         width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .bigtitle {
+        font-size: 60px;
     }
 }
