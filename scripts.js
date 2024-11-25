@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function openPopup(popupId) {
+
     document.getElementById(popupId).classList.add('show');
 }
 
