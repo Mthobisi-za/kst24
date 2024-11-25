@@ -157,7 +157,7 @@
                 <h2>
                     Themba Mola
                 </h2>
-                <a class="read-more" onclick="newPopup()">
+                <a class="read-more" style="cursor: pointer;" onclick="showHide()">
               Read More
               <i class="fas fa-arrow-right">
               </i>
@@ -1137,7 +1137,22 @@
     </section>
 
     <div class="speech">
-
+        <div class="s_top">
+            <div>
+                <!-- <img alt="Placeholder image for Chairperson of the Board" src="./assets/themba mola.png" />
+                <p>
+                    CEO
+                </p>
+                <h2>
+                    Themba Mola
+                </h2> -->
+            </div>
+            <div>
+                <i onclick="hideShow()" style="font-size: 30px;cursor: pointer;" class="fa fa-times"></i>
+            </div>
+        </div>
+        <img style="display: block;
+        margin: auto;" src="./assets/speech.svg" alt="">
     </div>
     <div class="footer">
         <hr> <br> <br>
@@ -1152,6 +1167,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./scripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    function hideShow() {
+        document.querySelector('.speech').style.display = "none";
+    }
 
+    function showHide() {
+        document.querySelector('.speech').style.display = "block";
+    }
+</script>
 
 </html>
