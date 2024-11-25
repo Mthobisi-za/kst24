@@ -29,6 +29,9 @@
     flex-wrap: wrap;
     justify-content: center;
     /* padding: 20px; */
+    width: 80%;
+    margin: auto;
+    /* padding: 40px; */
 }
 
 .programme_review .content .section {
@@ -55,6 +58,19 @@
 .programme_review .content .section p {
     font-size: 16px;
     line-height: 1.6;
+    /* text-align: left; */
+}
+
+.programme_review .content .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.programme_review .content .text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .programme_review .content .section .stats {
