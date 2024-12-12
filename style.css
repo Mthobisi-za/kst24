@@ -43,6 +43,19 @@ body {
     padding: 0;
 }
 
+.banners {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.desktop_banner {
+    display: block;
+}
+
+.mobile_banner {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -299,10 +312,20 @@ a {
     color: var(--background-color);
     font-weight: bold;
     font-size: 30px;
+    padding: 0px 10px;
+}
+
+.active_b {
+    background-color: var(--primary-color);
+    border-radius: 30px;
 }
 
 .menu-content a:hover {
     color: var(--primary-color);
+}
+
+.active_b:hover {
+    color: var(--background-color)!important;
 }
 
 .menu-content a::after {
@@ -338,6 +361,15 @@ a {
     }
     .menu-popup {
         width: 80%;
+    }
+}
+
+@media (max-width:900px) {
+    .desktop_banner {
+        display: none;
+    }
+    .mobile_banner {
+        display: block;
     }
 }
 
