@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../articles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="../socials.css">
+    <script type="speculationrules">
+        { "prerender": [ { "source": "list", "urls": ["news.html","../index.html", "communications.html", "financials.html", "our-people.html", "overview-of-kst.html", "programme-overview.html", "programme-review.html"] } ] }
+    </script>
 
 </head>
 
@@ -77,8 +80,8 @@
             <a onclick="toggleMenu()" href="./programme-overview.html">PROGRAMME OVERVIEW</a>
             <a class="active_b" onclick="toggleMenu()" href="#programme_review">PROGRAMME REVIEW</a>
             <a onclick="toggleMenu()" href="./communications.html">COMMUNICATIONS</a>
-            <a onclick="toggleMenu()" href="./financials.html">FINANCIALS</a>
             <a onclick="toggleMenu()" href="./news.html">NEWS ARTICLES</a>
+            <a onclick="toggleMenu()" href="./financials.html">FINANCIALS</a>
         </div>
     </div>
     <!-- popup menu-->
@@ -389,10 +392,20 @@
         <div class="header js" style="padding-bottom: 40px;">
             STRENGTHENING EDUCATION THROUGH PARTNERSHIP
         </div>
-        <div style="text-align: center;background: var(--primary-color);width: 80%;margin: auto;min-height: 10vh;padding: 20px 0px;display: flex;align-items: center;justify-content: center;">
+        <div style="text-align: center;width: 80%;margin: auto;min-height: 10vh;padding: 20px 0px;display: flex;align-items: center;justify-content: center;flex-direction: column;">
             <img alt="Globeleq logo with a map of Africa" src="../assets/s_4.png" style="width: 40%;" class="glo_logo" />
+            <div class="content" style="color: var(--primary-color);">
+                2023/24 has been a transformative year for KST as we embarked on new partnerships and consolidated our work across multiple districts. A significant highlight is the three-year contract signed with Globeleq to implement a part of the District Whole School
+                Development (DWSD) model in key wind and solar farms. This partnership enabled KST to build on the success of previous interventions and expand the impact across more schools.
+                <br> <br> <br>
+                <a class="read-more" onclick="openPopupNew()" style="cursor: pointer;background-color: var(--title-color);">
+                    Read More
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+            </div>
         </div>
-        <div class="logos">
+        <!-- <div class="logos">
             <img alt="De Aar Solar Power logo with a sun and green hills" src="../assets/s_1.png" />
             <img alt="Droogfontein Solar Power logo with a sun and green hills" src="../assets/s_3.png" />
             <img alt="Jeffreys Bay Wind Farm logo with wind turbines and green hills" src="../assets/s_3-3.png" />
@@ -405,7 +418,7 @@
             Development (DWSD) model in key wind and solar farms. This partnership enabled KST to build on the success of previous interventions and expand the impact across more schools.
             <br/><br/> Through the continued efforts of stakeholders, schools, and partners, KST have achieved meaningful improvements in the quality of education delivered to learners, particularly in under-resourced areas. The focus on capacity-building,
             leadership development, and infrastructural enhancement remains central to our mission.
-        </div>
+        </div> -->
     </section>
     <section class="key">
         <div class="container">
@@ -601,6 +614,35 @@
             </div>
         </div>
     </section>
+    <div class="popupHolder" style="display: none;width: 100%;height: 100vh;position: fixed;top: 0px;
+    left: 0px;background-color: var(--background-color);overflow-y: scroll;z-index: 10;">
+        <div class="closeBlock" style="min-height: 20vh;display: flex;justify-content: end;align-items: end;width: 90%;">
+            <svg onclick="closePopUpNew()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#EE4326" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path> </svg>
+        </div>
+        <section class="strength">
+            <div class="header js" style="padding-bottom: 40px;">
+                STRENGTHENING EDUCATION THROUGH PARTNERSHIP
+            </div>
+            <div style="text-align: center;background-color: var(--primary-color) ;width: 80%;margin: auto;min-height: 10vh;padding: 20px 0px;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                <img alt="Globeleq logo with a map of Africa" src="../assets/s_4.png" style="width: 40%;" class="glo_logo" />
+
+            </div>
+            <div class="logos">
+                <img alt="De Aar Solar Power logo with a sun and green hills" src="../assets/s_1.png" />
+                <img alt="Droogfontein Solar Power logo with a sun and green hills" src="../assets/s_3.png" />
+                <img alt="Jeffreys Bay Wind Farm logo with wind turbines and green hills" src="../assets/s_3-3.png" />
+
+                <img alt="Aries Solar Power logo with a sun and tree silhouette" src="../assets/s_5.png" />
+                <img alt="Bosch Solar Power logo with a sun and green hills" src="../assets/s_6.png" />
+            </div>
+            <div class="content" style="padding-bottom: 40px;">
+                2023/24 has been a transformative year for KST as we embarked on new partnerships and consolidated our work across multiple districts. A significant highlight is the three-year contract signed with Globeleq to implement a part of the District Whole School
+                Development (DWSD) model in key wind and solar farms. This partnership enabled KST to build on the success of previous interventions and expand the impact across more schools.
+                <br/><br/> Through the continued efforts of stakeholders, schools, and partners, KST have achieved meaningful improvements in the quality of education delivered to learners, particularly in under-resourced areas. The focus on capacity-building,
+                leadership development, and infrastructural enhancement remains central to our mission.
+            </div>
+        </section>
+    </div>
     <div class="footer">
         <hr> <br> <br>
         <p>© KST Annual Report 2023/24. All rights reserved.</p>
@@ -621,6 +663,15 @@
 
     function showHide() {
         document.querySelector('.speech').style.display = "block";
+    }
+</script>
+<script>
+    var popUpNew = document.querySelector('.popupHolder');
+    let closePopUpNew = () => {
+        popUpNew.style.display = 'none';
+    }
+    let openPopupNew = () => {
+        popUpNew.style.display = 'block';
     }
 </script>
 

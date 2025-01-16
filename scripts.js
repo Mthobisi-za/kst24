@@ -123,9 +123,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, stepTime);
     }
+    var checker = document.getElementById('number1')
+    var checkerTwo = document.getElementById('number2')
+        // console.log(checker)
+    if (checker !== null) {
+        animateValue("number1", 0, 54, 2000);
+    }
+    if (checkerTwo !== null) {
+        animateValue("number2", 0, 38, 2000);
+    }
 
-    animateValue("number1", 0, 54, 2000);
-    animateValue("number2", 0, 38, 2000);
+
 });
 const counters = document.querySelectorAll('.number_two');
 const speed = 200; // The lower the slower
@@ -205,10 +213,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const step = (timestamp) => {
             if (!startTimestamp) startTimestamp = timestamp;
             const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            element.innerText = Math.floor(progress * (end - start) + start);
-            if (progress < 1) {
-                window.requestAnimationFrame(step);
+            if (element !== null) {
+                element.innerText = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
             }
+
         };
         window.requestAnimationFrame(step);
     }
@@ -264,16 +275,20 @@ function scrollRight() {
     });
 }
 document.addEventListener('DOMContentLoaded', function() {
-    var splide = new Splide('.splide', {
-        type: 'loop',
-        perPage: 2,
-        gap: 20,
-        breakpoints: {
-            784: {
-                perPage: 1
+    var checker = document.querySelector('.splide');
+    if (checker !== null) {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 2,
+            gap: 20,
+            breakpoints: {
+                784: {
+                    perPage: 1
+                }
             }
-        }
 
-    });
-    splide.mount();
+        });
+        splide.mount();
+    }
+
 });
